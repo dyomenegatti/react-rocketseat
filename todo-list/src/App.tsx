@@ -4,6 +4,9 @@ import TrashIcon from "./assets/icons/Trash-Regular.svg?react"
 import Pencil from './assets/icons/PencilSimple-Regular.svg?react'
 import Badge from "./components/badge"
 import Button from "./components/button"
+import ButtonIcon from "./components/button-icon"
+import Input from "./components/input"
+import Checkbox from "./components/checkbox"
 
 export default function App() {
   return (
@@ -30,6 +33,20 @@ export default function App() {
 
       <div>
         <Button icon={Pencil}>Nova Tarefa</Button>
+      </div>
+
+      <div>
+        <ButtonIcon icon={TrashIcon}></ButtonIcon>
+        <ButtonIcon icon={TrashIcon} variant="secondary"></ButtonIcon>
+        <ButtonIcon icon={TrashIcon} variant="tertiary"></ButtonIcon>
+      </div>
+
+      <div>
+        <Input />
+      </div>
+
+      <div>
+        <Checkbox />
       </div>
     </div>
   )
